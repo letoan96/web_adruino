@@ -1,0 +1,15 @@
+current directory: /Users/letoan/Rails_on_Ruby/sample_app/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+/Users/letoan/.rbenv/versions/2.4.0/bin/ruby -r ./siteconf20180125-10037-1dyk788.rb extconf.rb
+creating Makefile
+
+current directory: /Users/letoan/Rails_on_Ruby/sample_app/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /Users/letoan/Rails_on_Ruby/sample_app/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.bundle
+
+current directory: /Users/letoan/Rails_on_Ruby/sample_app/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20180125-10037-1ht7xp9/bindex
