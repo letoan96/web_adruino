@@ -6,7 +6,7 @@ module WebConsole
     # currently require multiple bindings. We get those from exceptions.
     def only_on_error_page(*args)
       yield if Thread.current[:__web_console_exception].present?
-    end
+    endc
 
     # Render JavaScript inside a script tag and a closure.
     #
