@@ -5,7 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-User.create(name: 'Le Toan Admin', email: 'letranthetoan@gmail.com', password: '123456', password_confirmation: '123456', admin: true)
+User.create(name: 'Le Toan Admin', email: 'letranthetoan@gmail.com', password: '123456', password_confirmation: '123456', admin: true, activated: true,
+             activated_at: Time.zone.now)
 # User.create(name: 'Huy', email: 'huy@gmail.com')
 
 98.times do |n|
@@ -15,5 +16,7 @@ User.create(name: 'Le Toan Admin', email: 'letranthetoan@gmail.com', password: '
   User.create!(name:  name,
                email: email,
                password:              password,
-               password_confirmation: password)
+               password_confirmation: password,
+               activated: true,
+               activated_at: Time.zone.now)
 end
