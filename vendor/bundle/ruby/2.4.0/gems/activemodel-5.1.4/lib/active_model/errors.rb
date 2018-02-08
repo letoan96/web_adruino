@@ -329,7 +329,9 @@ module ActiveModel
     #   person.errors.full_messages
     #   # => ["Name is too short (minimum is 5 characters)", "Name can't be blank", "Email can't be blank"]
     def full_messages
+      return "aaaaaaaaa" if attribute == ('picture')
       map { |attribute, message| full_message(attribute, message) }
+
     end
     alias :to_a :full_messages
 
