@@ -39,6 +39,10 @@ class User < ApplicationRecord
   update_attribute(:activated_at, Time.zone.now)
   end
 
+  def User.findd(id)
+    User.find_by(:id => id).name
+  end
+
   # Sends activation email.
   def send_activation_email
     UserMailer.account_activation(self).deliver_now
