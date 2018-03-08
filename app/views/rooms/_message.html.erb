@@ -1,0 +1,27 @@
+<% unless message.user == current_user %>
+<div class="message-candidate center-block">
+  <div class="row">
+    <div class="col-xs-8 col-md-6">
+      <%= link_to gravatar_for(message.user, size: 30), message.user %>
+     <span class= "user"><%= link_to message.user.name, message.user %></span>
+   </div>
+   <div class="col-xs-4 col-md-6 text-right message-date"><%= time_ago_in_words(message.created_at) %> ago.</div>
+ </div>
+ <div class="row message-text">
+  <%= simple_format(message.content) %>
+</div>
+</div>
+<% else %>
+<div class="message-hiring-manager center-block">
+  <div class="row">
+    <div class="col-xs-8 col-md-6">
+      <%= link_to gravatar_for(message.user, size: 30), message.user %>
+     <span class= "user"><%= link_to message.user.name, message.user %></span>
+   </div>
+   <div class="col-xs-4 col-md-6 text-right message-date"><%= time_ago_in_words(message.created_at) %> ago.</div>
+ </div>
+ <div class="row message-text ">
+  <%= simple_format(message.content) %>
+</div>
+</div>
+<% end %>
