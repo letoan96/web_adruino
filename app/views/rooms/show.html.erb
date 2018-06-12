@@ -1,20 +1,21 @@
 <% provide(:title, 'Free Chat') %>
 
 <h1 class="text-center">Free Chat App</h1>
-<div class="container" <div id = "messages">
+<div class="container" id = "messages">
   
  	<%= render partial: "message", collection: @messages, as: :message %>
-
- <div class="messaging center-block">
+</div>
+<div class="messaging center-block">
     <div class="row">
       <div class="col-md-12">
-        <div class="input-group">
-          <input type="text" class="form-control">
+        <form class="input-group">
+
+          <input type="text" class="form-control" name="data">
           <span class="input-group-btn">
-            <button class="btn btn-default" type="button">Send</button>
+            <input class="btn btn-default" type="submit"  >Send</input>
           </span>
-        </div>
+
+        </form>
       </div>
     </div>
   </div>
-</div>

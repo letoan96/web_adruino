@@ -284,14 +284,14 @@ span.picture {
 
 .message-candidate {
   background: rgba(223, 229, 121, 0.9);
-  padding: 40px;
+  padding: 10px;
   max-width: 600px;
   margin-bottom: 10px;
 }
 
 .message-hiring-manager {
   background: rgba(0, 167, 204, 0.9);
-  padding: 40px;
+  padding: 10px;
   max-width: 600px;
   margin-bottom: 10px;
 }
@@ -302,7 +302,9 @@ span.picture {
 }
 
 .message-text {
-  margin-top: 10px;
+  margin-top: 5px;
+  padding-left: 20px;
+
 }
 
 .message-photo {

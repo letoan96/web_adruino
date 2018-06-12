@@ -1,5 +1,5 @@
-<% unless message.user == current_user %>
-<div class="message-candidate center-block">
+<% unless message.user.id == 1 %>
+<div class="message-candidate center-block" id= 'message'>
   <div class="row">
     <div class="col-xs-8 col-md-6">
       <%= link_to gravatar_for(message.user, size: 30), message.user %>
@@ -12,7 +12,7 @@
 </div>
 </div>
 <% else %>
-<div class="message-hiring-manager center-block">
+<div class="message-hiring-manager center-block" id= 'message'>
   <div class="row">
     <div class="col-xs-8 col-md-6">
       <%= link_to gravatar_for(message.user, size: 30), message.user %>
