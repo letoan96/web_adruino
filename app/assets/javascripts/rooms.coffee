@@ -17,6 +17,11 @@ $(document).on 'turbolinks:load', ->
     $('.result').addClass('active123')
     App.freechat.speak('getDistance_1')
 
+  $('#send_message').click ->
+    event.preventDefault()
+    console.log ('send message clicked')
+    App.freechat.speak('5')
+
   $('#getDistance_2').click ->
     event.preventDefault()
     console.log ('get distance 2 clicked')

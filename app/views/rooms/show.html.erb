@@ -2,22 +2,6 @@
 
 <h1 class="text-center">Adruino controller</h1>
  
-<!--
-<div class="messaging center-block">
-    <div class="row">
-      <div class="col-md-12">
-        <form class="input-group">
-
-          <input type="text" class="form-control" name="data">
-          <span class="input-group-btn">
-            <input class="btn btn-default" type="submit"  >Send</input>
-          </span>
-
-        </form>
-      </div>
-    </div>
-  </div> -->
-
 <center>
     <h3><div class="result"></div></h3>
   <div>
@@ -41,4 +25,6 @@
       <a id="getDistance_2" href=""> -> Xem khoảng cách tới trạm </a><span class="distance" id = "distance_2"></span>
     </small>
   </div>
+      <%= link_to "Send message ", '', class: "btn btn-primary", id: 'send_message' %>
+
 </center>
